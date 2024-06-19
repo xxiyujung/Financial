@@ -25,7 +25,7 @@ import matplotlib
 ###### 設定網頁標題介面 
 html_temp = """
 		<div style="background-color:#3872fb;padding:10px;border-radius:10px">   
-		<h1 style="color:white;text-align:center;">金融看板與程式交易平台 </h1>
+		<h1 style="color:white;text-align:center;">Financial Program Trading Platform </h1>
 		<h2 style="color:white;text-align:center;">Financial Dashboard and Program Trading </h2>
 		</div>
 		"""
@@ -42,7 +42,7 @@ def load_data(path):
 
 
 ###### 選擇金融商品
-st.subheader("選擇金融商品: ")
+st.subheader("金融商品: ")
 # choices = ['台積電: 2022.1.1 至 2024.4.9', '大台指2024.12到期: 2024.1 至 2024.4.9']
 choices = ['台積電: 2022.1.1 至 2024.4.9', '大台指期貨2024.12到期: 2023.12 至 2024.4.11', '小台指期貨2024.12到期: 2023.12 至 2024.4.11', '英業達2020.1.2 至 2024.4.12', '堤維西2020.1.2 至 2024.4.12']
 choice = st.selectbox('選擇金融商品', choices, index=0)
@@ -68,8 +68,8 @@ if choice == '堤維西2020.1.2 至 2024.4.12':
 
 
 
-###### 選擇資料區間
-st.subheader("選擇資料時間區間")
+###### 資料區間
+st.subheader("時間區間")
 if choice == '台積電: 2022.1.1 至 2024.4.9':
     start_date = st.text_input('輸入開始日期(日期格式: 2022-01-01), 區間:2022-01-01 至 2024-04-09', '2022-01-01')
     end_date = st.text_input('輸入結束日期 (日期格式: 2024-04-09), 區間:2022-01-01 至 2024-04-09', '2024-04-09')
