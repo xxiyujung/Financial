@@ -1,9 +1,3 @@
-# -*- coding: utf-8 -*-
-"""
-Created on Fri Jun  7 22:57:37 2024
-
-@author: a0208
-"""
 import streamlit as st
 import pandas as pd
 import plotly.graph_objs as go
